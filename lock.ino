@@ -123,9 +123,6 @@ uint8_t getFingerprintID() {
     return p;
   }
   // found a match!
-  digitalWrite(pin6, HIGH);
-  delay (5000);
-  digitalWrite(pin6, LOW);
   Serial.print("Found ID #"); Serial.print(finger.fingerID);
   Serial.print(" with confidence of "); Serial.println(finger.confidence);
 
